@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaizen International School</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+   
+   
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    
+    <link rel="stylesheet" href="../fonts/butler/stylesheet.css">
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body id="backToTop">
+    <header id="mainHeader">
+        <div class="topbar
+    py-6
+    ">
+            <div class="container mx-auto
+      flex
+      flex-col
+      md:flex-row
+      items-center
+      justify-between
+      gap-4
+      ">
+                <ul class="
+        flex
+        items-center
+        gap-4
+        ">
+                    <li><a href="" class="
+            uppercase
+            font-medium
+            text-sm
+            text-[#333]
+            hover:text-[#1A4688]
+            transition-all
+            duration-300
+            ">Students</a></li>
+                    <li><a href="" class="
+            uppercase
+            font-medium
+            text-sm
+            text-[#333]
+            hover:text-[#1A4688]
+            transition-all
+            duration-300
+            ">Staffs</a></li>
+                    <li><a href="alumni.html" class="
+            uppercase
+            font-medium
+            text-sm
+            text-[#333]
+            hover:text-[#1A4688]
+            transition-all
+            duration-300
+            ">Alumni</a></li>
+                    <li><a href="" class="
+            uppercase
+            font-medium
+            text-sm
+            text-[#333]
+            hover:text-[#1A4688]
+            transition-all
+            duration-300
+            ">Media</a></li>
+                </ul>
+
+                <div class="hidden md:block">
+                    <img src="../images/logo.webp" alt="logo" class="w-50" />
+                </div>
+
+                <div class="search-bar 
+        relative
+        ">
+                    <input type="text" placeholder="Search..." class="
+          search-input
+          border-b
+          border-[#969696]
+          py-2
+          px-4
+          pl-8
+          focus:outline-[#1A4688]
+          w-[70%]
+          mx-auto
+          ml-12
+          md:ml-0
+          " />
+                    <button class="search-button
+          absolute
+          left-14
+          md:left-2
+          top-2.5
+          text-[#1A4688]
+          ">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="navMenu" class="
+    fixed
+    md:relative
+    border-b border-gray-50
+    py-3 md:py-0
+    bg-[#1A4688] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]  
+    md:backdrop-blur-none  z-50 w-full">
+            <div class="container mx-auto px-6 md:px-0">
+                <div class="flex justify-between 
+      md:justify-center items-center flex-row 
+          md:px-5 md:rounded-full 
+          md:py-1">
+
+                    <div class="md:hidden">
+                        <img src="../images/logo-white.png" alt="logo" class="w-40" />
+                    </div>
+
+                    <div>
+                        <div class="w-full h-screen md:h-auto absolute 
+            top-[4rem] left-0 bg-black opacity-50 hidden menu-overly transition-all duration-300 md:hidden">
+                        </div>
+                        <ul class="flex flex-col md:flex-row 
+            shadow-xl md:space-y-0 md:space-x-4 
+            h-screen md:h-auto absolute 
+            top-[4rem] left-0 w-[0%] 
+            bg-[#1A4688]
+            overflow-hidden md:w-auto
+              py-2 menu-list transition-all 
+              duration-300 md:static md:shadow-none ">
+                            <li>
+                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="./about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="#">Departments</a>
+                            </li>
+                            <li>
+                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="#">Admissions</a>
+                            </li>
+                            <li>
+                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="notice-board.html">Notice Board</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="toggle-menu cursor-pointer text-gray-50 md:hidden">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="gallery">
+        <!-- Gallery Hero -->
+        <section class="">
+            <div class="
+            bg-[url('../images/gallery/11.jpg')] 
+            bg-cover 
+            bg-center 
+            bg-no-repeat 
+            h-[20rem]
+            
+            ">
+                <div class="
+             bg-[#1A4688]/50
+             h-full
+             ">
+                    <!-- breadcrumb -->
+                    <div class="">
+                        <div class="container mx-auto px-6 md:px-0 py-6">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <a href="#" class="
+                    text-white
+                    hover:underline
+                    text-md
+                    font-medium
+                    ">Home</a>
+                                    <span class="text-white font-medium mx-2">/</span>
+                                    <a href="#" class="
+                    text-white
+                    hover:underline
+                    text-md
+                    font-medium
+                    ">Gallery</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of breadcrumb -->
+
+                    <div class="about-hero">
+                        <div class="container mx-auto py-4
+                flex
+                items-center
+                justify-center
+                flex-col
+                pt-12
+                ">
+                            <h2 class="text-2xl! md:text-[30px]! wow animate__animated animate__slideInDown title 
+                    text-[#fff] uppercase relative 
+                    
+                    after:bg-white  after:w-20 after:h-0.5
+                     md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 
+                     md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 
+                     mb-4 text-center">
+                                Campus Snapshots
+                            </h2>
+                            <div class="social-media
+                    flex items-center justify-center
+                    gap-2
+                    ">
+                                <a href="#" class="
+                         bg-white
+                         w-9
+                         h-9
+                         flex
+                         items-center
+                         justify-center
+                         text-[#1A4688]
+                         rounded-full
+                         relative
+                         before:absolute
+                         before:h-8
+                         before:w-8
+                         before:bg-[#1A4688]
+                         before:rounded-full
+                         before:z-[1]
+                         before:scale-0
+                         hover:before:scale-100
+                         hover:text-white
+                         transition-all
+                         duration-300
+                         before:transition-all
+                         before:duration-300
+                        "><i class="relative z-50 fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="
+                         bg-white
+                         w-9
+                         h-9
+                         flex
+                         items-center
+                         justify-center
+                         text-[#1A4688]
+                         rounded-full
+                         relative
+                         before:absolute
+                         before:h-8
+                         before:w-8
+                         before:bg-[#1A4688]
+                         before:rounded-full
+                         before:z-[1]
+                         before:scale-0
+                         hover:before:scale-100
+                         hover:text-white
+                         transition-all
+                         duration-300
+                         before:transition-all
+                         before:duration-300
+                        "><i class="relative z-50 fa-brands fa-twitter"></i></a>
+                                <a href="#" class="
+                         bg-white
+                         w-9
+                         h-9
+                         flex
+                         items-center
+                         justify-center
+                         text-[#1A4688]
+                         rounded-full
+                         relative
+                         before:absolute
+                         before:h-8
+                         before:w-8
+                         before:bg-[#1A4688]
+                         before:rounded-full
+                         before:z-[1]
+                         before:scale-0
+                         hover:before:scale-100
+                         hover:text-white
+                         transition-all
+                         duration-300
+                         before:transition-all
+                         before:duration-300
+                        "><i class="relative z-50 fa-brands fa-youtube"></i></a>
+                                <a href="#" class="
+                         bg-white
+                         w-9
+                         h-9
+                         flex
+                         items-center
+                         justify-center
+                         text-[#1A4688]
+                         rounded-full
+                         relative
+                         before:absolute
+                         before:h-8
+                         before:w-8
+                         before:bg-[#1A4688]
+                         before:rounded-full
+                         before:z-[1]
+                         before:scale-0
+                         hover:before:scale-100
+                         hover:text-white
+                         transition-all
+                         duration-300
+                         before:transition-all
+                         before:duration-300
+                        "><i class="relative z-50 fa-brands fa-instagram"></i></a>
+                                <a href="#" class="
+                         bg-white
+                         w-9
+                         h-9
+                         flex
+                         items-center
+                         justify-center
+                         text-[#1A4688]
+                         rounded-full
+                         relative
+                         before:absolute
+                         before:h-8
+                         before:w-8
+                         before:bg-[#1A4688]
+                         before:rounded-full
+                         before:z-[1]
+                         before:scale-0
+                         hover:before:scale-100
+                         hover:text-white
+                         transition-all
+                         duration-300
+                         before:transition-all
+                         before:duration-300
+                        "><i class="relative z-50 fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery main -->
+        <section class="gallery py-8 md:py-24 wow animate__animated animate__slideInUp bg-gray-50">
+            <div class="container mx-auto px-4 overflow-hidden">
+                <!-- title -->
+                <div class="section-title mb-8 md:mb-16 px-5 md:px-0">
+                    <h2
+                        class="text-2xl! md:text-[50px]! font-exo2! wow animate__animated animate__slideInDown title text-[#333] capitalize relative after:bg-[#1A4688] after:w-20 after:h-0.5 md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 mb-4 text-center">
+                        Moments That Matter
+                    </h2>
+                    <p class="text-md md:w-1/2 w-full text-center text-gray-600 mx-auto">
+                        From classrooms to playgrounds — witness the spirit of our community.
+                    </p>
+                </div>
+                <!-- end of title -->
+
+                <!-- Filter controls -->
+                <div class="filter-controls flex justify-center mb-8 flex-wrap gap-2">
+                    <button
+                        class="filter-btn cursor-pointer px-4 py-2 rounded-md bg-gray-200 text-gray-700 bg-[#1A4688]! text-white font-medium transition-all hover:bg-[#0d2d5a] hover:text-white"
+                        data-filter="all">All</button>
+                    <button
+                        class="filter-btn cursor-pointer px-4 py-2 rounded-md bg-gray-200 text-gray-700 font-medium transition-all hover:bg-[#1A4688] hover:text-white"
+                        data-filter=".classrooms">Classrooms</button>
+                    <button
+                        class="filter-btn cursor-pointer px-4 py-2 rounded-md bg-gray-200 text-gray-700 font-medium transition-all hover:bg-[#1A4688] hover:text-white"
+                        data-filter=".library">Library</button>
+                    <button
+                        class="filter-btn cursor-pointer px-4 py-2 rounded-md bg-gray-200 text-gray-700 font-medium transition-all hover:bg-[#1A4688] hover:text-white"
+                        data-filter=".campus">Campus</button>
+                    <button
+                        class="filter-btn cursor-pointer px-4 py-2 rounded-md bg-gray-200 text-gray-700 font-medium transition-all hover:bg-[#1A4688] hover:text-white"
+                        data-filter=".events">Events</button>
+                </div>
+
+                <!-- gallery grid with MixItUp -->
+                <div id="gallery-container"
+                    class="gallery-grid grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+                    <!-- gallery items with mix categories -->
+                    <a href="../images/gallery/1.jpg" data-wow-delay="0.3s"
+                        class="gallery-item mix classrooms group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/1.jpg" alt="Modern Classrooms"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Modern Classrooms</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/2.jpg" data-wow-delay="0.6s"
+                        class="gallery-item mix library  group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/2.jpg" alt="University Library"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">University Library</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/3.jpg" data-wow-delay="0.9s"
+                        class="gallery-item mix campus  group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/3.jpg" alt="Campus Grounds"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Campus Grounds</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/4.jpg" data-wow-delay="0.3s"
+                        class="gallery-item mix events group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/4.jpg" alt="Student Events"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Student Events</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/5.jpg" data-wow-delay="0.6s"
+                        class="gallery-item mix classrooms  group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/5.jpg" alt="Science Lab"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Science Lab</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/6.jpg" data-wow-delay="0.9s"
+                        class="gallery-item mix library  group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/6.jpg" alt="Reading Area"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Reading Area</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/7.jpg" data-wow-delay="0.3s"
+                        class="gallery-item mix campus group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/7.jpg" alt="Campus Garden"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Campus Garden</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/8.jpg" data-wow-delay="0.6s"
+                        class="gallery-item mix events group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/8.jpg" alt="Graduation Ceremony"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Graduation Ceremony</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/9.jpg" data-wow-delay="0.9s"
+                        class="gallery-item mix classrooms group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/9.jpg" alt="Lecture Hall"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Lecture Hall</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/10.jpg" data-wow-delay="0.3s"
+                        class="gallery-item mix library group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/10.jpg" alt="Study Zone"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Study Zone</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/11.jpg" data-wow-delay="0.6s"
+                        class="gallery-item mix campus group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/11.jpg" alt="Sports Field"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Sports Field</h3>
+                        </div>
+                    </a>
+
+                    <a href="../images/gallery/12.jpg" data-wow-delay="0.9s"
+                        class="gallery-item mix events group relative overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <img src="../images/gallery/12.jpg" alt="Cultural Festival"
+                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <h3 class="text-white font-exo2 text-lg font-semibold">Cultural Festival</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-[#1d1d1d] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 relative">
+
+        <!-- Back to Top Button -->
+        <a href="#backToTop" class="fixed right-8 bottom-8 w-14 h-14 rounded-full
+         bg-white z-[99] text-[#1A4688] hidden items-center justify-center
+          shadow-xl text-xl ring-2 ring-[#1A4688] animate-bounce
+           hover:bg-[#1A4688] hover:text-white hover:animate-none duration-300
+            transition-all back_btn">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        </a>
+
+        <!-- Overlay -->
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gray-900/90 z-[1]"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- top bar-->
+            <div class="
+       border-b border-gray-600
+       mb-12
+       pb-18
+       pt-6
+       flex
+       justify-center
+       items-center
+       ">
+                <form action="#" class="
+        
+        ">
+                    <!-- title -->
+                    <div class="section-title mb-8 md:mb-16 px-5 md:px-0
+        w-2/3
+        mx-auto
+        ">
+                        <h2 class="text-2xl! md:text-[30px]! title 
+            text-[#fff] capitalize relative 
+            
+            after:bg-[#1A4688] after:w-20 after:h-0.5
+             md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 
+             md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 
+             mb-4 text-center">
+                            Never miss a campus update — sent right to your inbox
+                        </h2>
+                    </div>
+                    <!-- end of title -->
+
+                    <div class="flex items-center justify-center">
+                        <input type="email" placeholder="Email Address" class="
+          py-4
+          px-6
+          w-full
+          md:w-100
+          outline-none
+          bg-gray-200
+          text-[#1A4688]
+          placeholder:text-[#1A4688]
+          ">
+                        <button type="submit" class="
+          py-4
+          px-6
+          md:px-12
+          bg-[#1A4688]
+          text-white
+          ml-[-3px]
+          hover:bg-white
+          hover:text-[#1A4688]
+          transition-all
+          duration-300
+          cursor-pointer
+          uppercase font-medium
+          tracking-wider
+          title
+          ">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                <!-- Logo and About (takes half width) -->
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <img src="../images/logo-white.png" alt="RC Holdings Logo" class="h-12">
+                    </div>
+                    <p class="text-gray-200 text-justify">
+                        Driving innovation and creating value through strategic investments and partnerships.
+                        Driving innovation and creating value through strategic investments and partnerships.
+                        Driving innovation and creating value through strategic investments and partnerships.
+                        Driving innovation and creating value through strategic investments and partnerships.
+                    </p>
+                </div>
+
+                <!-- Kaizen School + Contact (each takes 50% of this half) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <!-- Kaizen School Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6">Kaizen School</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Home</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">About Us</a>
+                            </li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Our
+                                    Services</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Portfolio</a>
+                            </li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="">
+                        <h3 class="text-lg font-semibold mb-6">Contact</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
+                                        class="mr-2 fa-solid fa-phone"></i> +880 1234 5678</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
+                                        class="mr-2 fa-solid fa-envelope"></i> kaizen.edu@example.com</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
+                                        class="mr-2 fa-solid fa-location-dot"></i> 123 Main Street, City, Country</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-600 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-200 text-sm">© 2025 <a href="https://kaizenitbd.com" target="_blank"
+                        class="text-gray-200 hover:text-gray-400 transition duration-150">Kaizen IT Ltd</a>. All rights
+                    reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Privacy
+                        Policy</a>
+                    <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Terms of
+                        Service</a>
+                    <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- mixitup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

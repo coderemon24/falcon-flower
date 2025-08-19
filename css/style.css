@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+    --font-exo2: "Exo 2", "sans-serif";
+    --font-montserrat: 'Montserrat', sans-serif;
+    --color-main: #9f0712;
+}
+
+:root {
+    --primary-color: #1A4688;
+    --white-color: #fff;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.back_btn {
+    transition: all 0.2s linear;
+}
+
+.title {
+    font-family: 'Butler', sans-serif;
+}
+
+.exo2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.animate-fadeIn {
+    transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+.animate-fadeIn-text {
+    transition-delay: 0.5s;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 10px !important;
+    background: var(--white-color) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--white-color);
+    outline: 5px solid #ffffff5d;
+}
+
+/***********************
+* latest notice section
+***********************/
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/***********************
+* about section
+***********************/
+
+.custom-btn {
+    padding: 10px 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+/**** BTN No. 14 ****/
+.btn-14 {
+    border: 2px solid var(--primary-color);
+    z-index: 1;
+}
+
+.btn-14:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+    color: var(--white-color);
+}
+
+.btn-14:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-14:active {
+    top: 2px;
+}
+
+.view-profile::after {
+    background: var(--white-color);
+}
+
+.view-profile {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    padding: 5px 20px;
+}
+
+.view-profile:hover {
+    color: var(--primary-color);
+}
+
+/******************************
+*=== 
+*******************************/
+.mix{
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+
+
+
+/*******************************
+*=== 
+********************************/
+
