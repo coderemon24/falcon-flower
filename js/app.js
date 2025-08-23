@@ -305,3 +305,4 @@ $(document).on("click", ".close_popup, .overlay_popup", function (e) {
   $(".main_popup").addClass("scale-0");
   $(".overlay_popup").addClass("hidden");
 });
+
