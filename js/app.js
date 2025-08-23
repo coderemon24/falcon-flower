@@ -59,53 +59,7 @@ $(document).ready(function () {
     },
   });
 
-  //  business swiper slider
-  const businessesSwiper = new Swiper(".business-swiper", {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 40,
-    effect: "slide",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    speed: 2000,
-    direction: "horizontal",
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1, // mobile
-      },
-      640: {
-        slidesPerView: 1.2, // small screens
-      },
-      768: {
-        slidesPerView: 2, // tablet
-      },
-      1024: {
-        slidesPerView: 3, // laptop
-      },
-      1280: {
-        slidesPerView: 4, // desktop
-      },
-    },
-  });
-
+ 
   //  events swiper slider
   const eventsSwiper = new Swiper(".event-slider", {
     loop: true,
@@ -172,7 +126,7 @@ $(document).ready(function () {
         $("#navMenu")
           .hide()
           .addClass(
-            "md:fixed! z-[999] md:relative top-0 border-b border-black shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
+            "md:fixed! fixed! z-[999] md:relative top-0 border-b border-black shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
           )
           .removeClass("md:static!")
           .slideDown(300);
@@ -182,7 +136,7 @@ $(document).ready(function () {
       if (isFixed) {
         $("#navMenu")
           .removeClass(
-            " z-[999] md:fixed! md:relative top-0 border-b border-black shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
+            " z-[999] md:fixed! fixed! md:relative top-0 border-b border-black shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
           )
           .addClass("md:static!");
         isFixed = false;
