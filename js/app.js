@@ -112,6 +112,7 @@ $(document).ready(function () {
     slidesPerView: 3,
     spaceBetween: 20,
     effect: "slide",
+    pagination: false,
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -122,10 +123,7 @@ $(document).ready(function () {
     speed: 2000,
     direction: "horizontal",
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
