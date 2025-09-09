@@ -1,920 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!-- save as index.html and include Tailwind CDN in head for quick prototyping -->
+<!doctype html>
+<html lang="bn">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaizen International School</title>
-    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- lightbox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
-    <link rel="stylesheet" href="../fonts/butler/stylesheet.css">
-    <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Red & Green Flowers — ফুলের দোকান</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom for the theme */
+    :root{
+      --brand-red: #E63946;
+      --brand-green: #2A9D8F;
+    }
+    .btn-primary{
+      background: linear-gradient(90deg,var(--brand-red),#d32b3e);
+      color:white;
+    }
+    .btn-accent{
+      background: var(--brand-green);
+      color: white;
+    }
+  </style>
 </head>
-
-<body id="backToTop">
-    <header id="mainHeader">
-        <div class="topbar
-    py-6
-    ">
-            <div class="container mx-auto
-      flex
-      flex-col
-      md:flex-row
-      items-center
-      justify-between
-      gap-4
-      ">
-                <ul class="
-        flex
-        items-center
-        gap-4
-        ">
-                    <li><a href="" class="
-            uppercase
-            font-medium
-            text-sm
-            text-[#333]
-            hover:text-[#1A4688]
-            transition-all
-            duration-300
-            ">Students</a></li>
-                    <li><a href="" class="
-            uppercase
-            font-medium
-            text-sm
-            text-[#333]
-            hover:text-[#1A4688]
-            transition-all
-            duration-300
-            ">Staffs</a></li>
-                    <li><a href="alumni.html" class="
-            uppercase
-            font-medium
-            text-sm
-            text-[#333]
-            hover:text-[#1A4688]
-            transition-all
-            duration-300
-            ">Alumni</a></li>
-                    <li><a href="" class="
-            uppercase
-            font-medium
-            text-sm
-            text-[#333]
-            hover:text-[#1A4688]
-            transition-all
-            duration-300
-            ">Media</a></li>
-                </ul>
-
-                <div class="hidden md:block">
-                    <img src="../images/logo.webp" alt="logo" class="w-50" />
-                </div>
-
-                <div class="search-bar 
-        relative
-        ">
-                    <input type="text" placeholder="Search..." class="
-          search-input
-          border-b
-          border-[#969696]
-          py-2
-          px-4
-          pl-8
-          focus:outline-[#1A4688]
-          w-[70%]
-          mx-auto
-          ml-12
-          md:ml-0
-          " />
-                    <button class="search-button
-          absolute
-          left-14
-          md:left-2
-          top-2.5
-          text-[#1A4688]
-          ">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a class="flex items-center gap-3" href="#">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:var(--brand-red)">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C10 6 4 7 4 13c0 4 4 7 8 9 4-2 8-5 8-9 0-6-6-7-8-11z"/></svg>
         </div>
-        <div id="navMenu" class="
-    fixed
-    md:relative
-    border-b border-gray-50
-    py-3 md:py-0
-    bg-[#1A4688] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]  
-    md:backdrop-blur-none  z-50 w-full">
-            <div class="container mx-auto px-6 md:px-0">
-                <div class="flex justify-between 
-      md:justify-center items-center flex-row 
-          md:px-5 md:rounded-full 
-          md:py-1">
+        <span class="text-lg font-semibold">R&G Flowers</span>
+      </a>
 
-                    <div class="md:hidden">
-                        <img src="../images/logo-white.png" alt="logo" class="w-40" />
-                    </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Bouquets</a>
+        <a href="#" class="hover:underline">Gifts</a>
+        <a href="#" class="hover:underline">Occasions</a>
+      </nav>
 
-                    <div>
-                        <div class="w-full h-screen md:h-auto absolute 
-            top-[4rem] left-0 bg-black opacity-50 hidden menu-overly transition-all duration-300 md:hidden">
-                        </div>
-                        <ul class="flex flex-col md:flex-row 
-            shadow-xl md:space-y-0 md:space-x-4 
-            h-screen md:h-auto absolute 
-            top-[4rem] left-0 w-[0%] 
-            bg-[#1A4688]
-            overflow-hidden md:w-auto
-              py-2 menu-list transition-all 
-              duration-300 md:static md:shadow-none ">
-                            <li>
-                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
-                  md:rounded-full
-                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="../index.html">Home</a>
-                            </li>
-                            <li>
-                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
-                  md:rounded-full
-                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="./about.html">About</a>
-                            </li>
-                            <li>
-                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
-                  md:rounded-full
-                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="#">Departments</a>
-                            </li>
-                            <li>
-                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
-                  md:rounded-full
-                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="#">Admissions</a>
-                            </li>
-                            <li>
-                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
-                  md:rounded-full
-                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="gallery.html">Gallery</a>
-                            </li>
-                            <li>
-                                <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-white transition-all duration-300 font-medium text-md 
-                  md:rounded-full
-                  hover:text-[#1A4688] hover:bg-gray-50 w-[100%] block" href="notice-board.html">Notice Board</a>
-                            </li>
-                        </ul>
-                    </div>
+      <div class="flex items-center gap-3">
+        <input aria-label="search" class="hidden md:block border rounded-md px-3 py-2 w-56" placeholder="Search flowers, roses..." />
+        <button class="p-2 rounded-md" aria-label="cart">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-                    <button class="toggle-menu cursor-pointer text-gray-50 md:hidden">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
+  <!-- HERO -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 sm:px-6 py-12 items-center">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-4">তাজা ফুল — মুহূর্তটাকে সুন্দর করে তুলুন</h1>
+        <p class="text-gray-600 mb-6">রেড কুশন-রঙের গোলাপ, গ্রিন বেঁধে দেওয়া বাকে সুন্দর পরিবেশন। এক ক্লিকে অর্ডার করুণ। Same-day delivery available.</p>
+        <div class="flex gap-3">
+          <a class="btn-primary px-5 py-3 rounded-lg shadow hover:opacity-95" href="#">Shop Bestsellers</a>
+          <a class="btn-accent px-5 py-3 rounded-lg shadow hover:opacity-95" href="#">Customize Bouquet</a>
         </div>
-    </header>
+      </div>
+      <div class="flex justify-center">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Bouquet" class="w-full max-w-md rounded-xl shadow-lg" loading="lazy" />
+      </div>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <main id="gallery">
-        <!-- Notice Board Hero -->
-        <section class="">
-            <div class="
-            bg-[url('../images/gallery/11.jpg')] 
-            bg-cover 
-            bg-center 
-            bg-no-repeat 
-            h-[20rem]
-            
-            ">
-                <div class="
-             bg-[#1A4688]/50
-             h-full
-             ">
-                    <!-- breadcrumb -->
-                    <div class="">
-                        <div class="container mx-auto px-6 md:px-0 py-6">
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <a href="#" class="
-                    text-white
-                    hover:underline
-                    text-md
-                    font-medium
-                    ">Home</a>
-                                    <span class="text-white font-medium mx-2">/</span>
-                                    <a href="#" class="
-                    text-white
-                    hover:underline
-                    text-md
-                    font-medium
-                    ">Notice Board</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of breadcrumb -->
-
-                    <div class="about-hero">
-                        <div class="container mx-auto py-4
-                flex
-                items-center
-                justify-center
-                flex-col
-                pt-12
-                ">
-                            <h2 class="text-2xl! md:text-[30px]! wow animate__animated animate__slideInDown title 
-                    text-[#fff] uppercase relative 
-                    
-                    after:bg-white  after:w-20 after:h-0.5
-                     md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 
-                     md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 
-                     mb-4 text-center">
-                                Notice Board
-                            </h2>
-                            <div class="social-media
-                    flex items-center justify-center
-                    gap-2
-                    ">
-                                <a href="#" class="
-                         bg-white
-                         w-9
-                         h-9
-                         flex
-                         items-center
-                         justify-center
-                         text-[#1A4688]
-                         rounded-full
-                         relative
-                         before:absolute
-                         before:h-8
-                         before:w-8
-                         before:bg-[#1A4688]
-                         before:rounded-full
-                         before:z-[1]
-                         before:scale-0
-                         hover:before:scale-100
-                         hover:text-white
-                         transition-all
-                         duration-300
-                         before:transition-all
-                         before:duration-300
-                        "><i class="relative z-50 fa-brands fa-facebook-f"></i></a>
-                                <a href="#" class="
-                         bg-white
-                         w-9
-                         h-9
-                         flex
-                         items-center
-                         justify-center
-                         text-[#1A4688]
-                         rounded-full
-                         relative
-                         before:absolute
-                         before:h-8
-                         before:w-8
-                         before:bg-[#1A4688]
-                         before:rounded-full
-                         before:z-[1]
-                         before:scale-0
-                         hover:before:scale-100
-                         hover:text-white
-                         transition-all
-                         duration-300
-                         before:transition-all
-                         before:duration-300
-                        "><i class="relative z-50 fa-brands fa-twitter"></i></a>
-                                <a href="#" class="
-                         bg-white
-                         w-9
-                         h-9
-                         flex
-                         items-center
-                         justify-center
-                         text-[#1A4688]
-                         rounded-full
-                         relative
-                         before:absolute
-                         before:h-8
-                         before:w-8
-                         before:bg-[#1A4688]
-                         before:rounded-full
-                         before:z-[1]
-                         before:scale-0
-                         hover:before:scale-100
-                         hover:text-white
-                         transition-all
-                         duration-300
-                         before:transition-all
-                         before:duration-300
-                        "><i class="relative z-50 fa-brands fa-youtube"></i></a>
-                                <a href="#" class="
-                         bg-white
-                         w-9
-                         h-9
-                         flex
-                         items-center
-                         justify-center
-                         text-[#1A4688]
-                         rounded-full
-                         relative
-                         before:absolute
-                         before:h-8
-                         before:w-8
-                         before:bg-[#1A4688]
-                         before:rounded-full
-                         before:z-[1]
-                         before:scale-0
-                         hover:before:scale-100
-                         hover:text-white
-                         transition-all
-                         duration-300
-                         before:transition-all
-                         before:duration-300
-                        "><i class="relative z-50 fa-brands fa-instagram"></i></a>
-                                <a href="#" class="
-                         bg-white
-                         w-9
-                         h-9
-                         flex
-                         items-center
-                         justify-center
-                         text-[#1A4688]
-                         rounded-full
-                         relative
-                         before:absolute
-                         before:h-8
-                         before:w-8
-                         before:bg-[#1A4688]
-                         before:rounded-full
-                         before:z-[1]
-                         before:scale-0
-                         hover:before:scale-100
-                         hover:text-white
-                         transition-all
-                         duration-300
-                         before:transition-all
-                         before:duration-300
-                        "><i class="relative z-50 fa-brands fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+  <!-- PRODUCTS -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+    <h2 class="text-2xl font-semibold mb-4">Popular bouquets</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- product card -->
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop" alt="Red Roses" class="w-full h-48 object-cover"/>
+        <div class="p-4">
+          <h3 class="font-semibold">Red Roses Bouquet</h3>
+          <p class="text-sm text-gray-500 mt-1">12 stems — perfect for anniversaries</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-lg font-bold">৳1,500</span>
             </div>
-        </section>
-
-        <section class="relative overflow-hidden py-8 pb-14 bg-gray-50">
-            <div class="container mx-auto">
-                <!-- title -->
-                <div class="section-title mb-8 md:mb-16 px-5 md:px-0">
-                    <h2
-                        class="text-2xl! md:text-[50px]! font-exo2! wow animate__animated animate__slideInDown title text-[#333] capitalize relative after:bg-[#1A4688] after:w-20 after:h-0.5 md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 mb-4 text-center">
-                        Recent Announcements
-                    </h2>
-                    <p class="text-md md:w-1/2 w-full text-center text-gray-600 mx-auto">
-                        From Announcements to Achievements — Stay Updated with What Matters Most.
-                    </p>
-                </div>
-                <!-- end of title -->
-
-                <div class="updates_news
-        flex
-        flex-col
-        md:flex-row
-        gap-4
-        ">
-                    <div class="w-full">
-                        <div class="
-            bg-white
-            p-6
-            rounded-md
-            shadow-md
-            overflow-x-auto
-            wow animate__animated animate__slideInLeft
-            ">
-                            <table
-                                class="w-full border border-gray-200 text-sm text-left rtl:text-right text-gray-500 ">
-                                <thead class="text-xs text-gray-700 uppercase bg-gray-50  ">
-                                    <tr class="
-                  border-b
-                  border-gray-200
-                  ">
-                                        <th scope="col" class="px-6 py-3 border-r
-                    border-gray-200
-                    ">
-                                            SL No.
-                                        </th>
-                                        <th scope="col" class="px-6 py-3
-                    border-r
-                    border-gray-200
-                    ">
-                                            Topic
-                                        </th>
-                                        <th scope="col" class="px-6 py-3
-                    border-r
-                    border-gray-200">
-                                            Date
-                                        </th>
-                                        <th scope="col" class="px-6 py-3">
-                                            Action
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            01
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            02
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            03
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            04
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            05
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            06
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            07
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            08
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            09
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr class="bg-white border-b   border-gray-200 hover:bg-gray-50 ">
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900
-                     whitespace-nowrap 
-                     border-r
-                     border-gray-200
-                     ">
-                                            10
-                                        </th>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            জুলাই গণঅভ্যুত্থান বর্ষপূর্তি পালন উপলক্ষ্যে ২৪ এর রঙে গ্রাফিতি ও
-                                            চিত্রাঙ্কন প্রতিযোগিতার
-                                            অনুষ্ঠানে উপস্থিত হওয়ার বিজ্ঞপ্তি
-                                        </td>
-                                        <td class="px-6 py-4
-                    border-r
-                    border-gray-200
-                    ">
-                                            01/07/2023
-                                        </td>
-                                        <td class="px-6 py-4 text-right">
-                                            <a href="#" class="font-medium text-[#1A4688] hover:underline">
-                                                Download
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    
-                                    
-                                </tbody>
-                            </table>
-                            
-                            <!-- Pagination -->
-                            <div class="pagination pt-6 pb-8
-                             flex
-                             flex-row
-                             justify-end
-                             gap-3
-                            ">
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">Prev</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">1</a>
-                                <a href="#" class="bg-[#1A4688] text-white font-semibold py-2 px-3 rounded">2</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">3</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">4</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">5</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">6</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">........................</a>
-                                
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">124</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">125</a>
-                                <a href="#" class="bg-[#1A4688] text-[#333] font-semibold py-2 px-3 rounded bg-gray-200">Next</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer bg-[#1d1d1d] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 relative">
-
-        <!-- Back to Top Button -->
-        <a href="#backToTop" class="fixed right-8 bottom-8 w-14 h-14 rounded-full
-         bg-white z-[99] text-[#1A4688] hidden items-center justify-center
-          shadow-xl text-xl ring-2 ring-[#1A4688] animate-bounce
-           hover:bg-[#1A4688] hover:text-white hover:animate-none duration-300
-            transition-all back_btn">
-            <i class="fa-solid fa-arrow-up-long"></i>
-        </a>
-
-        <!-- Overlay -->
-        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gray-900/90 z-[1]"></div>
-
-        <div class="max-w-7xl mx-auto relative z-10">
-            <!-- top bar-->
-            <div class="
-       border-b border-gray-600
-       mb-12
-       pb-18
-       pt-6
-       flex
-       justify-center
-       items-center
-       ">
-                <form action="#" class="
-        
-        ">
-                    <!-- title -->
-                    <div class="section-title mb-8 md:mb-16 px-5 md:px-0
-        w-2/3
-        mx-auto
-        ">
-                        <h2 class="text-2xl! md:text-[30px]! title 
-            text-[#fff] capitalize relative 
-            
-            after:bg-[#1A4688] after:w-20 after:h-0.5
-             md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 
-             md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 
-             mb-4 text-center">
-                            Never miss a campus update — sent right to your inbox
-                        </h2>
-                    </div>
-                    <!-- end of title -->
-
-                    <div class="flex items-center justify-center">
-                        <input type="email" placeholder="Email Address" class="
-          py-4
-          px-6
-          w-full
-          md:w-100
-          outline-none
-          bg-gray-200
-          text-[#1A4688]
-          placeholder:text-[#1A4688]
-          ">
-                        <button type="submit" class="
-          py-4
-          px-6
-          md:px-12
-          bg-[#1A4688]
-          text-white
-          ml-[-3px]
-          hover:bg-white
-          hover:text-[#1A4688]
-          transition-all
-          duration-300
-          cursor-pointer
-          uppercase font-medium
-          tracking-wider
-          title
-          ">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Grid Layout -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-                <!-- Logo and About (takes half width) -->
-                <div class="space-y-6">
-                    <div class="flex items-center">
-                        <img src="../images/logo-white.png" alt="RC Holdings Logo" class="h-12">
-                    </div>
-                    <p class="text-gray-200 text-justify">
-                        Driving innovation and creating value through strategic investments and partnerships.
-                        Driving innovation and creating value through strategic investments and partnerships.
-                        Driving innovation and creating value through strategic investments and partnerships.
-                        Driving innovation and creating value through strategic investments and partnerships.
-                    </p>
-                </div>
-
-                <!-- Kaizen School + Contact (each takes 50% of this half) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                    <!-- Kaizen School Links -->
-                    <div>
-                        <h3 class="text-lg font-semibold mb-6">Kaizen School</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Home</a></li>
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">About Us</a>
-                            </li>
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Our
-                                    Services</a></li>
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Portfolio</a>
-                            </li>
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Contact -->
-                    <div class="">
-                        <h3 class="text-lg font-semibold mb-6">Contact</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
-                                        class="mr-2 fa-solid fa-phone"></i> +880 1234 5678</a></li>
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
-                                        class="mr-2 fa-solid fa-envelope"></i> kaizen.edu@example.com</a></li>
-                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
-                                        class="mr-2 fa-solid fa-location-dot"></i> 123 Main Street, City, Country</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="border-t border-gray-600 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-200 text-sm">© 2025 <a href="https://kaizenitbd.com" target="_blank"
-                        class="text-gray-200 hover:text-gray-400 transition duration-150">Kaizen IT Ltd</a>. All rights
-                    reserved.
-                </p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Privacy
-                        Policy</a>
-                    <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Terms of
-                        Service</a>
-                    <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Cookies</a>
-                </div>
-            </div>
+            <button class="btn-accent px-3 py-2 rounded-md" aria-label="add to cart">Add</button>
+          </div>
         </div>
-    </footer>
+      </article>
 
+      <!-- repeat cards as needed -->
+      <!-- ... -->
+    </div>
+  </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- lightbox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <!-- mixitup -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-
-    <script src="../js/app.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold">R&G Flowers</h4>
+        <p class="text-sm text-gray-600 mt-2">Same-day delivery in city. Fresh guarantee. Custom ribbons in red & green.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Support</h5>
+        <ul class="text-sm text-gray-600 mt-2 space-y-1">
+          <li>Delivery & returns</li>
+          <li>Payment methods</li>
+          <li>Contact: +8801XXXXXXXXX</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold">Subscribe</h5>
+        <p class="text-sm text-gray-600 mt-2">Get offers & seasonal bouquets.</p>
+        <form class="mt-3 flex gap-2">
+          <input class="border rounded px-3 py-2 flex-1" placeholder="Your email" />
+          <button class="btn-primary px-4 py-2 rounded">Join</button>
+        </form>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

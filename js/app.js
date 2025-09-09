@@ -126,7 +126,7 @@ $(document).ready(function () {
         $("#navMenu")
           .hide()
           .addClass(
-            "md:fixed! fixed! z-[999] md:relative top-0 border-b border-black shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
+            "md:fixed! fixed! z-[999] md:relative top-0 border-b border-black/50 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
           )
           .removeClass("md:static!")
           .slideDown(300);
@@ -136,7 +136,7 @@ $(document).ready(function () {
       if (isFixed) {
         $("#navMenu")
           .removeClass(
-            " z-[999] md:fixed! fixed! md:relative top-0 border-b border-black shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
+            " z-[999] md:fixed! fixed! md:relative top-0 border-b border-black/50 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
           )
           .addClass("md:static!");
         isFixed = false;

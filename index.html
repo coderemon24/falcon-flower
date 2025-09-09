@@ -28,6 +28,7 @@
 </head>
 
 <body id="backToTop">
+  <!--header-->
   <header id="mainHeader">
     <!-- top bar -->
     <div class="topbar
@@ -97,44 +98,45 @@
     border-b
     border-black
     ">
-        <div class="container mx-auto
-      flex
-      flex-col
-      md:flex-row
-      items-center
-      justify-between
-      gap-4
+        <div class="
+         mx-auto w-11/12
+        grid
+        gap-4
+        grid-cols-1
+        md:grid-cols-3
+        items-center
+        justify-between
       ">
 
           <!-- social icons -->
           <ul class="
-        flex
-        items-center
-        gap-4
-        flex-wrap
-        md:justify-start
-        justify-center
-        
-        ">
+            flex
+            items-center
+            gap-4
+            flex-wrap
+            md:justify-start
+            justify-center
+            
+            ">
 
             <li>
               <a href="#" class="
-            uppercase
-            font-medium
-            ring-1
-            ring-black/80
-            hover:bg-blue-900
-            text-black/80
-            hover:text-white
-            hover:ring-blue-900
-            transition-all
-            duration-300
-            w-9
-            h-9
-            flex
-            items-center
-            justify-center
-            rounded-full
+                uppercase
+                font-medium
+                ring-1
+                ring-black/80
+                hover:bg-blue-900
+                text-black/80
+                hover:text-white
+                hover:ring-blue-900
+                transition-all
+                duration-300
+                w-9
+                h-9
+                flex
+                items-center
+                justify-center
+                rounded-full
             ">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
@@ -191,7 +193,7 @@
 
 
           <!-- logo -->
-          <div class="hidden md:block">
+          <div class="hidden md:flex md:items-center md:justify-center">
             <img src="./images/logo.png" alt="logo" class="w-50 h-20" />
           </div>
 
@@ -199,32 +201,32 @@
         flex
         items-center
         justify-between
+        md:justify-end
+        w-full
         ">
             <!-- search bar -->
             <div class="search-bar 
           relative
-          left-[-2rem]
           ">
-              <input type="text" placeholder="Search..." class="
+              <input type="text" placeholder="Search flowers,roses" class="
             search-input
-            border-b
-            border-[#969696]
-            py-2
+            border-1
+            border-black/20
+            py-3
             px-4
             pl-8
             focus:outline-black
             md:w-[90%]
-            w-[70%]
-            mx-auto
-            ml-12
-            md:ml-0
+            w-[100%]
+            rounded
+            placeholder:text-sm
             " />
               <button class="search-button
             absolute
-            left-14
+            left-2.5
             md:left-2
-            top-2.5
-            text-black
+            top-3.5
+            text-black/60
             ">
                 <i class="fas fa-search"></i>
               </button>
@@ -235,12 +237,12 @@
            items-center
            gap-4
            justify-center
-           mt-3
            ">
               <li>
                 <a href="#" class="
               text-xl
               md:text-2xl
+              text-black/90
               ">
                   <i class="fa-solid fa-shopping-bag"></i>
                 </a>
@@ -249,6 +251,7 @@
                 <a href="#" class="
               text-xl
               md:text-2xl
+              text-black/90
               ">
                   <i class="fa-solid fa-user-circle"></i>
                 </a>
@@ -292,32 +295,32 @@
                 <li>
                   <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
                   md:rounded-full
-                  hover:text-white hover:bg-black w-[100%] block" href="./index.html">Home</a>
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="./index.html">Home</a>
                 </li>
                 <li>
                   <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
                   md:rounded-full
-                  hover:text-white hover:bg-black w-[100%] block" href="./pages/about.html">About</a>
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="./pages/about.html">About</a>
                 </li>
                 <li>
                   <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
                   md:rounded-full
-                  hover:text-white hover:bg-black w-[100%] block" href="#">Departments</a>
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">Departments</a>
                 </li>
                 <li>
                   <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
                   md:rounded-full
-                  hover:text-white hover:bg-black w-[100%] block" href="#">Admissions</a>
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">Admissions</a>
                 </li>
                 <li>
                   <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
                   md:rounded-full
-                  hover:text-white hover:bg-black w-[100%] block" href="./pages/gallery.html">Gallery</a>
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="./pages/gallery.html">Gallery</a>
                 </li>
                 <li>
                   <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
                   md:rounded-full
-                  hover:text-white hover:bg-black w-[100%] block" href="./pages/notice-board.html">Notice
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="./pages/notice-board.html">Notice
                     Board</a>
                 </li>
               </ul>
@@ -457,17 +460,17 @@
         p-5
         rounded-md
         shadow-md
-        sticky
+        md:sticky
         top-50
         ">
             <ul>
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -482,10 +485,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -500,10 +503,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -518,10 +521,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -536,10 +539,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -554,10 +557,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -572,10 +575,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -590,10 +593,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -608,10 +611,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -626,10 +629,10 @@
 
               <li class="
             border-b
-            border-black
+            border-green-700
             py-2
             cursor-pointer
-            hover:bg-black
+            hover:bg-green-700
             hover:text-white
             hover:pl-2
             transition-all
@@ -648,20 +651,22 @@
           <!-- products -->
           <div class="
         grid
-        grid-cols-2
-        gap-4
+        grid-cols-1
+        gap-8
+        sm:grid-cols-2
         md:gap-8
         md:grid-cols-3
         lg:grid-cols-4
         py-5
         ">
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -678,22 +683,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -702,13 +707,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -725,22 +731,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -749,13 +755,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -772,22 +779,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -796,13 +803,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -819,22 +827,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -843,13 +851,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -866,22 +875,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -890,13 +899,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -913,22 +923,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -937,13 +947,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -960,22 +971,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -984,13 +995,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1007,22 +1019,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1031,13 +1043,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1054,22 +1067,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1078,13 +1091,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1101,22 +1115,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1125,13 +1139,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1148,22 +1163,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1172,13 +1187,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1195,22 +1211,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1219,13 +1235,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1242,22 +1259,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1266,13 +1283,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1289,22 +1307,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1313,13 +1331,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1336,22 +1355,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1360,13 +1379,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1383,22 +1403,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1407,13 +1427,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1430,22 +1451,22 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1454,13 +1475,14 @@
                 </a>
               </div>
             </div>
-
+        
             <!-- product item -->
             <div class="
           bg-gray-100
           overflow-hidden
           rounded-md
           shadow-md
+          h-[30.5rem]
           ">
               <img class="
              w-full
@@ -1477,22 +1499,214 @@
                 <h6>50 Red Roses</h6>
                 <p>
                   <span class="italic">from</span>
-                  <span class="font-bold text-lg">
+                  <span class="font-bold text-lg text-green-700">
                     $500.00
                   </span>
                 </p>
 
                 <a class="
-                bg-black
+                bg-green-700
                 text-white
                 px-8
                 py-2
                 mt-2
                 rounded-full
                 hover:bg-white
-                hover:text-black
+                hover:text-green-700
                 border
-                border-black
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                  View
+                </a>
+              </div>
+            </div>
+        
+            <!-- product item -->
+            <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          h-[30.5rem]
+          ">
+              <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+              <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                <h6>50 Red Roses</h6>
+                <p>
+                  <span class="italic">from</span>
+                  <span class="font-bold text-lg text-green-700">
+                    $500.00
+                  </span>
+                </p>
+
+                <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                  View
+                </a>
+              </div>
+            </div>
+        
+            <!-- product item -->
+            <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          h-[30.5rem]
+          ">
+              <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+              <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                <h6>50 Red Roses</h6>
+                <p>
+                  <span class="italic">from</span>
+                  <span class="font-bold text-lg text-green-700">
+                    $500.00
+                  </span>
+                </p>
+
+                <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                  View
+                </a>
+              </div>
+            </div>
+        
+            <!-- product item -->
+            <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          h-[30.5rem]
+          ">
+              <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+              <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                <h6>50 Red Roses</h6>
+                <p>
+                  <span class="italic">from</span>
+                  <span class="font-bold text-lg text-green-700">
+                    $500.00
+                  </span>
+                </p>
+
+                <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                  View
+                </a>
+              </div>
+            </div>
+        
+            <!-- product item -->
+            <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          h-[30.5rem]
+          ">
+              <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+              <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                <h6>50 Red Roses</h6>
+                <p>
+                  <span class="italic">from</span>
+                  <span class="font-bold text-lg text-green-700">
+                    $500.00
+                  </span>
+                </p>
+
+                <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
                 transition-all
                 duration-300
                 ease-in-out
@@ -1519,7 +1733,7 @@
         <!-- title -->
         <div class="section-title mb-8 md:mb-16 px-5 md:px-0">
           <h2
-            class="text-2xl! md:text-[50px]! font-exo2! wow animate__animated animate__slideInDown title text-[#333] capitalize relative after:bg-[#1A4688] after:w-20 after:h-0.5 md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 mb-4 text-center">
+            class="text-2xl! md:text-[50px]! font-exo2! wow animate__animated animate__slideInDown title text-[#333] capitalize relative after:bg-red-600 after:w-20 after:h-0.5 md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 mb-4 text-center">
             Featured Products
           </h2>
           <p class="text-md md:w-1/2 w-full text-center text-gray-600 mx-auto">
@@ -1571,13 +1785,333 @@
                   <h6>50 Red Roses</h6>
                   <p>
                     <span class="italic">from</span>
-                    <span class="font-bold text-lg">
+                    <span class="font-bold text-lg text-green-700">
                       $500.00
                     </span>
                   </p>
 
                   <a class="
-                bg-black
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                    View
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Slides -->
+            <div class="swiper-slide 
+            w-full
+            flex
+            relative
+            overflow-hidden
+            cursor-pointer
+            group
+            wow animate__animated animate__fadeInUpBig
+            bg-white
+            shadow-md
+            rounded-md
+            
+            ">
+
+              <!-- product item -->
+              <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          ">
+                <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+                <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                  <h6>50 Red Roses</h6>
+                  <p>
+                    <span class="italic">from</span>
+                    <span class="font-bold text-lg text-green-700">
+                      $500.00
+                    </span>
+                  </p>
+
+                  <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                    View
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Slides -->
+            <div class="swiper-slide 
+            w-full
+            flex
+            relative
+            overflow-hidden
+            cursor-pointer
+            group
+            wow animate__animated animate__fadeInUpBig
+            bg-white
+            shadow-md
+            rounded-md
+            
+            ">
+
+              <!-- product item -->
+              <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          ">
+                <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+                <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                  <h6>50 Red Roses</h6>
+                  <p>
+                    <span class="italic">from</span>
+                    <span class="font-bold text-lg text-green-700">
+                      $500.00
+                    </span>
+                  </p>
+
+                  <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                    View
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Slides -->
+            <div class="swiper-slide 
+            w-full
+            flex
+            relative
+            overflow-hidden
+            cursor-pointer
+            group
+            wow animate__animated animate__fadeInUpBig
+            bg-white
+            shadow-md
+            rounded-md
+            
+            ">
+
+              <!-- product item -->
+              <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          ">
+                <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+                <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                  <h6>50 Red Roses</h6>
+                  <p>
+                    <span class="italic">from</span>
+                    <span class="font-bold text-lg text-green-700">
+                      $500.00
+                    </span>
+                  </p>
+
+                  <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                    View
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Slides -->
+            <div class="swiper-slide 
+            w-full
+            flex
+            relative
+            overflow-hidden
+            cursor-pointer
+            group
+            wow animate__animated animate__fadeInUpBig
+            bg-white
+            shadow-md
+            rounded-md
+            
+            ">
+
+              <!-- product item -->
+              <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          ">
+                <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+                <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                  <h6>50 Red Roses</h6>
+                  <p>
+                    <span class="italic">from</span>
+                    <span class="font-bold text-lg text-green-700">
+                      $500.00
+                    </span>
+                  </p>
+
+                  <a class="
+                bg-green-700
+                text-white
+                px-8
+                py-2
+                mt-2
+                rounded-full
+                hover:bg-white
+                hover:text-green-700
+                border
+                border-green-700
+                transition-all
+                duration-300
+                ease-in-out
+                " href="#">
+                    View
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Slides -->
+            <div class="swiper-slide 
+            w-full
+            flex
+            relative
+            overflow-hidden
+            cursor-pointer
+            group
+            wow animate__animated animate__fadeInUpBig
+            bg-white
+            shadow-md
+            rounded-md
+            
+            ">
+
+              <!-- product item -->
+              <div class="
+          bg-gray-100
+          overflow-hidden
+          rounded-md
+          shadow-md
+          ">
+                <img class="
+             w-full
+             " src="./images//products/roses.webp" alt="">
+
+                <div class="
+             flex
+             flex-col
+             justify-center
+             items-center
+             p-3
+             pb-4
+             ">
+                  <h6>50 Red Roses</h6>
+                  <p>
+                    <span class="italic">from</span>
+                    <span class="font-bold text-lg text-green-700">
+                      $500.00
+                    </span>
+                  </p>
+
+                  <a class="
+                bg-green-700
                 text-white
                 px-8
                 py-2
@@ -1635,327 +2169,7 @@
                   <h6>50 Red Roses</h6>
                   <p>
                     <span class="italic">from</span>
-                    <span class="font-bold text-lg">
-                      $500.00
-                    </span>
-                  </p>
-
-                  <a class="
-                bg-black
-                text-white
-                px-8
-                py-2
-                mt-2
-                rounded-full
-                hover:bg-white
-                hover:text-black
-                border
-                border-black
-                transition-all
-                duration-300
-                ease-in-out
-                " href="#">
-                    View
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Slides -->
-            <div class="swiper-slide 
-            w-full
-            flex
-            relative
-            overflow-hidden
-            cursor-pointer
-            group
-            wow animate__animated animate__fadeInUpBig
-            bg-white
-            shadow-md
-            rounded-md
-            
-            ">
-
-              <!-- product item -->
-              <div class="
-          bg-gray-100
-          overflow-hidden
-          rounded-md
-          shadow-md
-          ">
-                <img class="
-             w-full
-             " src="./images//products/roses.webp" alt="">
-
-                <div class="
-             flex
-             flex-col
-             justify-center
-             items-center
-             p-3
-             pb-4
-             ">
-                  <h6>50 Red Roses</h6>
-                  <p>
-                    <span class="italic">from</span>
-                    <span class="font-bold text-lg">
-                      $500.00
-                    </span>
-                  </p>
-
-                  <a class="
-                bg-black
-                text-white
-                px-8
-                py-2
-                mt-2
-                rounded-full
-                hover:bg-white
-                hover:text-black
-                border
-                border-black
-                transition-all
-                duration-300
-                ease-in-out
-                " href="#">
-                    View
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Slides -->
-            <div class="swiper-slide 
-            w-full
-            flex
-            relative
-            overflow-hidden
-            cursor-pointer
-            group
-            wow animate__animated animate__fadeInUpBig
-            bg-white
-            shadow-md
-            rounded-md
-            
-            ">
-
-              <!-- product item -->
-              <div class="
-          bg-gray-100
-          overflow-hidden
-          rounded-md
-          shadow-md
-          ">
-                <img class="
-             w-full
-             " src="./images//products/roses.webp" alt="">
-
-                <div class="
-             flex
-             flex-col
-             justify-center
-             items-center
-             p-3
-             pb-4
-             ">
-                  <h6>50 Red Roses</h6>
-                  <p>
-                    <span class="italic">from</span>
-                    <span class="font-bold text-lg">
-                      $500.00
-                    </span>
-                  </p>
-
-                  <a class="
-                bg-black
-                text-white
-                px-8
-                py-2
-                mt-2
-                rounded-full
-                hover:bg-white
-                hover:text-black
-                border
-                border-black
-                transition-all
-                duration-300
-                ease-in-out
-                " href="#">
-                    View
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Slides -->
-            <div class="swiper-slide 
-            w-full
-            flex
-            relative
-            overflow-hidden
-            cursor-pointer
-            group
-            wow animate__animated animate__fadeInUpBig
-            bg-white
-            shadow-md
-            rounded-md
-            
-            ">
-
-              <!-- product item -->
-              <div class="
-          bg-gray-100
-          overflow-hidden
-          rounded-md
-          shadow-md
-          ">
-                <img class="
-             w-full
-             " src="./images//products/roses.webp" alt="">
-
-                <div class="
-             flex
-             flex-col
-             justify-center
-             items-center
-             p-3
-             pb-4
-             ">
-                  <h6>50 Red Roses</h6>
-                  <p>
-                    <span class="italic">from</span>
-                    <span class="font-bold text-lg">
-                      $500.00
-                    </span>
-                  </p>
-
-                  <a class="
-                bg-black
-                text-white
-                px-8
-                py-2
-                mt-2
-                rounded-full
-                hover:bg-white
-                hover:text-black
-                border
-                border-black
-                transition-all
-                duration-300
-                ease-in-out
-                " href="#">
-                    View
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Slides -->
-            <div class="swiper-slide 
-            w-full
-            flex
-            relative
-            overflow-hidden
-            cursor-pointer
-            group
-            wow animate__animated animate__fadeInUpBig
-            bg-white
-            shadow-md
-            rounded-md
-            
-            ">
-
-              <!-- product item -->
-              <div class="
-          bg-gray-100
-          overflow-hidden
-          rounded-md
-          shadow-md
-          ">
-                <img class="
-             w-full
-             " src="./images//products/roses.webp" alt="">
-
-                <div class="
-             flex
-             flex-col
-             justify-center
-             items-center
-             p-3
-             pb-4
-             ">
-                  <h6>50 Red Roses</h6>
-                  <p>
-                    <span class="italic">from</span>
-                    <span class="font-bold text-lg">
-                      $500.00
-                    </span>
-                  </p>
-
-                  <a class="
-                bg-black
-                text-white
-                px-8
-                py-2
-                mt-2
-                rounded-full
-                hover:bg-white
-                hover:text-black
-                border
-                border-black
-                transition-all
-                duration-300
-                ease-in-out
-                " href="#">
-                    View
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Slides -->
-            <div class="swiper-slide 
-            w-full
-            flex
-            relative
-            overflow-hidden
-            cursor-pointer
-            group
-            wow animate__animated animate__fadeInUpBig
-            bg-white
-            shadow-md
-            rounded-md
-            
-            ">
-
-              <!-- product item -->
-              <div class="
-          bg-gray-100
-          overflow-hidden
-          rounded-md
-          shadow-md
-          ">
-                <img class="
-             w-full
-             " src="./images//products/roses.webp" alt="">
-
-                <div class="
-             flex
-             flex-col
-             justify-center
-             items-center
-             p-3
-             pb-4
-             ">
-                  <h6>50 Red Roses</h6>
-                  <p>
-                    <span class="italic">from</span>
-                    <span class="font-bold text-lg">
+                    <span class="font-bold text-lg text-green-700">
                       $500.00
                     </span>
                   </p>
@@ -2015,9 +2229,9 @@
 
     <!-- Back to Top Button -->
     <a href="#backToTop" class="fixed right-8 bottom-8 w-14 h-14 rounded-full
-         bg-white z-[99] text-black hidden items-center justify-center
-          shadow-xl text-xl ring-2 ring-black animate-bounce
-           hover:bg-black hover:text-white hover:animate-none duration-300
+         bg-white z-[99] text-red-600 hidden items-center justify-center
+          shadow-xl text-xl ring-2 ring-red-600 animate-bounce
+           hover:bg-red-600 hover:text-white hover:animate-none duration-300
             transition-all back_btn">
       <i class="fa-solid fa-arrow-up-long"></i>
     </a>
@@ -2047,7 +2261,7 @@
             <h2 class="text-2xl! md:text-[30px]! title 
             text-[#fff] capitalize relative 
             
-            after:bg-[#1A4688] after:w-20 after:h-0.5
+            after:bg-red-600 after:w-20 after:h-0.5
              md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 
              md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 
              mb-4 text-center">
@@ -2064,18 +2278,18 @@
           md:w-100
           outline-none
           bg-gray-200
-          text-[#1A4688]
-          placeholder:text-[#1A4688]
+          text-green-700
+          placeholder:text-green-700
           ">
             <button type="submit" class="
           py-4
           px-6
           md:px-12
-          bg-[#1A4688]
+          bg-green-700
           text-white
           ml-[-3px]
-          hover:bg-white
-          hover:text-[#1A4688]
+          hover:bg-green-600
+          hover:text-white
           transition-all
           duration-300
           cursor-pointer
@@ -2109,14 +2323,14 @@
           <div>
             <h3 class="text-lg font-semibold mb-6">Falcon Flower</h3>
             <ul class="space-y-3">
-              <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Home</a></li>
-              <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">About Us</a>
+              <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">Home</a></li>
+              <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">About Us</a>
               </li>
-              <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Our
+              <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">Our
                   Services</a></li>
-              <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Portfolio</a>
+              <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">Portfolio</a>
               </li>
-              <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Contact</a>
+              <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">Contact</a>
               </li>
             </ul>
           </div>
@@ -2141,15 +2355,15 @@
       <!-- Bottom Bar -->
       <div class="border-t border-gray-600 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-200 text-sm">© 2025 <a href="https://temdevs.com" target="_blank"
-            class="text-gray-200 hover:text-gray-400 transition duration-150">TemDevs</a>. All rights
+            class="text-gray-200 hover:text-red-600 transition duration-150">TemDevs</a>. All rights
           reserved.
         </p>
         <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Privacy
+          <a href="#" class="text-gray-200 hover:text-red-600 text-sm transition duration-150">Privacy
             Policy</a>
-          <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Terms of
+          <a href="#" class="text-gray-200 hover:text-red-600 text-sm transition duration-150">Terms of
             Service</a>
-          <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Cookies</a>
+          <a href="#" class="text-gray-200 hover:text-red-600 text-sm transition duration-150">Cookies</a>
         </div>
       </div>
     </div>
