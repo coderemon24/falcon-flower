@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Details | Falcon Flower</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../fonts/butler/stylesheet.css">
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body id="backToTop">
+    <!--header-->
+    <header id="mainHeader">
+        <!-- top bar -->
+        <div class="topbar
+    bg-green-700
+    py-2
+    md:py-3
+    hidden
+    md:block
+    ">
+            <div class="container mx-auto
+      flex
+      items-center
+      justify-between
+      ">
+                <!-- contact -->
+                <ul class="
+          flex
+          justify-center
+          items-center
+          flex-wrap
+          gap-4
+          text-white
+          ">
+                    <li class="text-sm">
+                        <i class="mr-2 fa-solid fa-phone"></i> +880 1234 5678
+                    </li>
+                    <li class="text-sm ">
+                        <i class="mr-2 fa-solid fa-envelope"></i> temdevs@example.com
+                    </li>
+                    <li class="text-sm ">
+                        <i class="mr-2 fa-solid fa-location-dot"></i> 123 Main Street, City, Country
+                    </li>
+                </ul>
+
+                <!-- quotes -->
+                <ul class="
+          md:flex
+          justify-center
+          items-center
+          flex-wrap
+          gap-8
+          text-white
+          hidden
+          ">
+                    <li class="text-sm">
+                        Outstanding Service
+                    </li>
+                    <li class="text-sm ">
+                        Free Delivery To All Emirates
+                    </li>
+                    <li class="text-sm ">
+                        Video Approval For All Orders
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="navMenu" class="
+    w-full
+    bg-white
+    pb-0
+    ">
+            <!-- middle bar -->
+            <div class="middlebar
+    py-4
+    border-b
+    border-green-700
+    ">
+                <div class="
+         mx-auto w-11/12
+        grid
+        gap-4
+        grid-cols-1
+        md:grid-cols-3
+        items-center
+        justify-between
+      ">
+
+                    <!-- social icons -->
+                    <ul class="
+            flex
+            items-center
+            gap-4
+            flex-wrap
+            md:justify-start
+            justify-center
+            
+            ">
+
+                        <li>
+                            <a href="#" class="
+                uppercase
+                font-medium
+                ring-1
+                ring-black/80
+                hover:bg-blue-900
+                text-black/80
+                hover:text-white
+                hover:ring-blue-900
+                transition-all
+                duration-300
+                w-9
+                h-9
+                flex
+                items-center
+                justify-center
+                rounded-full
+            ">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="
+            uppercase
+            font-medium
+            ring-1
+            ring-black/80
+            hover:bg-rose-800
+            text-black/80
+            hover:text-white
+            hover:ring-rose-800
+            transition-all
+            duration-300
+            w-9
+            h-9
+            flex
+            items-center
+            justify-center
+            rounded-full
+            ">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="
+            uppercase
+            font-medium
+            ring-1
+            ring-black/80
+            hover:bg-black/90
+            text-black/80
+            hover:text-white
+            hover:ring-black/90
+            transition-all
+            duration-300
+            w-9
+            h-9
+            flex
+            items-center
+            justify-center
+            rounded-full
+            ">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+
+                    <!-- logo -->
+                    <div class="hidden md:flex md:items-center md:justify-center">
+                        <img src="../images/logo.png" alt="logo" class="w-50 h-20" />
+                    </div>
+
+                    <div class="
+        flex
+        items-center
+        justify-between
+        md:justify-end
+        w-full
+        ">
+                        <!-- search bar -->
+                        <div class="search-bar 
+          relative
+          ">
+                            <input type="text" placeholder="Search flowers,roses" class="
+            search-input
+            border-1
+            border-black/20
+            py-3
+            px-4
+            pl-8
+            focus:outline-black
+            md:w-[90%]
+            w-[100%]
+            rounded
+            placeholder:text-sm
+            " />
+                            <button class="search-button
+            absolute
+            left-2.5
+            md:left-2
+            top-3.5
+            text-black/60
+            ">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <!-- cart & profile-->
+                        <ul class="
+           flex
+           items-center
+           gap-4
+           justify-center
+           ">
+                            <li>
+                                <a href="#" class="
+              text-xl
+              md:text-2xl
+              text-black/90
+              ">
+                                    <i class="fa-solid fa-shopping-bag"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="
+              text-xl
+              md:text-2xl
+              text-black/90
+              ">
+                                    <i class="fa-solid fa-user-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- navigation bar -->
+            <div class="
+    fixed
+    md:relative
+    border-b border-black/20
+    py-3 md:py-0 shadow
+    bg-white 
+    md:backdrop-blur-none  z-50 w-full">
+                <div class="container mx-auto px-6 md:px-0">
+                    <div class="flex justify-between 
+      md:justify-center items-center flex-row 
+          md:px-5 md:rounded-full 
+          md:py-1">
+
+                        <div class="md:hidden">
+                            <img src="../images/logo.webp" alt="logo" class="w-40" />
+                        </div>
+
+                        <div>
+                            <div class="w-full h-screen md:h-auto absolute 
+            top-[4rem] left-0 bg-black opacity-50 hidden menu-overly transition-all duration-300 md:hidden">
+                            </div>
+                            <ul class="flex flex-col md:flex-row 
+            shadow-xl md:space-y-0 md:space-x-4 
+            h-screen md:h-auto absolute 
+            top-[4rem] left-0 w-[0%] 
+            bg-white
+            overflow-hidden md:w-auto
+              py-2 menu-list transition-all 
+              duration-300 md:static md:shadow-none ">
+                                <li>
+                                    <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">Our Complete Range</a>
+                                </li>
+                                <li>
+                                    <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">Birthday Flowers</a>
+                                </li>
+                                <li>
+                                    <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">Anniversary Flowers</a>
+                                </li>
+                                <li>
+                                    <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">VIP Flowers</a>
+                                </li>
+                                <li>
+                                    <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">Rose Collections</a>
+                                </li>
+                                <li>
+                                    <a class="px-6 md:px-3 md:hover:px-6 md:py-1.5 py-2 text-black/80 transition-all duration-300 font-medium text-md 
+                  md:rounded-full
+                  hover:text-white hover:bg-green-700 w-[100%] block" href="#">Special Offers</a>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="toggle-menu cursor-pointer text-black md:hidden">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="">
+
+        <!-- breadcrumb -->
+        <section class="bg-gray-100 py-3 md:py-5 mt-20">
+            <div class="mx-auto w-11/12">
+                <div class="flex items-center py-3 md:py-5">
+                    <a href="../index.html" class="text-gray-600 hover:text-red-600">
+                        <i class="fa-solid fa-house mr-2"></i>
+                        Home
+                    </a>
+                    <span class="mx-2">
+                        <i class="fa-solid text-gray-500 fa-chevron-right"></i>
+                    </span>
+                    <a href="#" class="text-gray-600 hover:text-red-600">
+                        Product Details
+                    </a>
+                </div>
+        </section>
+
+        <!-- product details -->
+        <section class="py-5 md:py-10">
+            <div class="mx-auto w-11/12">
+                <div class="
+                grid grid-cols-1 md:grid-cols-2
+                ">
+                    <!-- Product Gallery -->
+                    <div class="product-gallery">
+                    
+                    </div>
+
+                    <div>product details</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-[#1d1d1d] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 relative">
+
+        <!-- Back to Top Button -->
+        <a href="#backToTop" class="fixed right-8 bottom-8 w-14 h-14 rounded-full
+         bg-white z-[99] text-red-600 hidden items-center justify-center
+          shadow-xl text-xl ring-2 ring-red-600 animate-bounce
+           hover:bg-red-600 hover:text-white hover:animate-none duration-300
+            transition-all back_btn">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        </a>
+
+        <!-- Overlay -->
+        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gray-900/90 z-[1]"></div>
+
+        <div class="w-11/12 mx-auto relative z-10">
+            <!-- top bar-->
+            <div class="
+       border-b border-gray-600
+       mb-12
+       pb-18
+       pt-6
+       flex
+       justify-center
+       items-center
+       ">
+                <form action="#" class="
+        
+        ">
+                    <!-- title -->
+                    <div class="section-title mb-8 md:mb-16 px-5 md:px-0
+        w-2/3
+        mx-auto
+        ">
+                        <h2 class="text-2xl! md:text-[30px]! title 
+            text-[#fff] capitalize relative 
+            
+            after:bg-red-600 after:w-20 after:h-0.5
+             md:after:h-[3px] after:absolute after:top-[100%] after:left-1/2 
+             md:after:left-1/2 after:-translate-x-1/2 md:after:-translate-x-1/2 
+             mb-4 text-center">
+                            Never miss a bloom — fresh floral updates delivered straight to your inbox.
+                        </h2>
+                    </div>
+                    <!-- end of title -->
+
+                    <div class="flex items-center justify-center">
+                        <input type="email" placeholder="Email Address" class="
+          py-4
+          px-6
+          w-full
+          md:w-100
+          outline-none
+          bg-gray-200
+          text-green-700
+          placeholder:text-green-700
+          ">
+                        <button type="submit" class="
+          py-4
+          px-6
+          md:px-12
+          bg-green-700
+          text-white
+          ml-[-3px]
+          hover:bg-green-600
+          hover:text-white
+          transition-all
+          duration-300
+          cursor-pointer
+          uppercase font-medium
+          tracking-wider
+          title
+          ">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                <!-- Logo and About (takes half width) -->
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <img src="../images/logo.png" alt="RC Holdings Logo" class="h-12">
+                    </div>
+                    <p class="text-gray-200 text-justify">
+                        We bring joy to every occasion with fresh, handpicked flowers. Each arrangement is crafted with
+                        love, care,
+                        and elegance to make your moments unforgettable. From everyday surprises to life’s most
+                        cherished
+                        celebrations, our blooms speak the language of the heart. Delivering beauty and happiness, one
+                        bouquet at a
+                        time.
+                    </p>
+                </div>
+
+                <!-- Falcon Flower + Contact (each takes 50% of this half) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <!-- Falcon Flowers Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6">Falcon Flower</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">Home</a>
+                            </li>
+                            <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">About
+                                    Us</a>
+                            </li>
+                            <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">Our
+                                    Services</a></li>
+                            <li><a href="#"
+                                    class="text-gray-200 hover:text-red-600 transition duration-150">Portfolio</a>
+                            </li>
+                            <li><a href="#" class="text-gray-200 hover:text-red-600 transition duration-150">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="">
+                        <h3 class="text-lg font-semibold mb-6">Contact</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
+                                        class="mr-2 fa-solid fa-phone"></i> +880 1234 5678</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
+                                        class="mr-2 fa-solid fa-envelope"></i> ahmedemon.dev24@gmail.com</a></li>
+                            <li><a href="#" class="text-gray-200 hover:text-white transition duration-150"><i
+                                        class="mr-2 fa-solid fa-location-dot"></i> 123 Main Street, City, Country</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-600 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-200 text-sm">© 2025 <a href="https://temdevs.com" target="_blank"
+                        class="text-gray-200 hover:text-red-600 transition duration-150">TemDevs</a>. All rights
+                    reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-200 hover:text-red-600 text-sm transition duration-150">Privacy
+                        Policy</a>
+                    <a href="#" class="text-gray-200 hover:text-red-600 text-sm transition duration-150">Terms of
+                        Service</a>
+                    <a href="#" class="text-gray-200 hover:text-red-600 text-sm transition duration-150">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+
+    <script src="../js/app.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

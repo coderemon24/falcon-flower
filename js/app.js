@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
   }
 
-  //  main swiper slider
+  //  home swiper slider
   const swiper = new Swiper(".swiper", {
     loop: true,
     slidesPerView: 1,
@@ -59,51 +59,8 @@ $(document).ready(function () {
     },
   });
 
- 
-  //  events swiper slider
-  const eventsSwiper = new Swiper(".event-slider", {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
-    effect: "slide",
-    pagination: false,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    speed: 2000,
-    direction: "horizontal",
 
-    
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1, // mobile
-      },
-      640: {
-        slidesPerView: 1.2, // small screens
-      },
-      768: {
-        slidesPerView: 2, // tablet
-      },
-      1024: {
-        slidesPerView: 3, // laptop
-      },
-      1280: {
-        slidesPerView: 4, // desktop
-      },
-    },
-  });
+
 
   // back to top
   $(window).on("scroll", function () {
@@ -183,78 +140,11 @@ $(document).ready(function () {
     },
   }).init();
 
-  // gallery -> lightbox
-  $(".gallery-grid").magnificPopup({
-    delegate: "a.gallery-item",
-    type: "image",
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 2],
-    },
-    image: {
-      titleSrc: function (item) {
-        return item.el.find("img").attr("alt");
-      },
-    },
-    zoom: {
-      enabled: true,
-      duration: 200,
-      easing: "ease-in-out",
-    },
-  });
-
-  // gallery -> mixitup
-  var mixer = mixitup("#gallery-container", {
-    selectors: {
-      target: ".mix",
-    },
-    load: {
-      filter: ".mix",
-      sort: "random",
-    },
-    animation: {
-      enable: true,
-      duration: 300,
-      easing: "ease-in-out",
-      effects: "fade scale",
-    },
-    controls: {
-      enable: true,
-    },
-  });
-
-  $(".filter-btn").on("click", function () {
-    $(".filter-btn").removeClass("bg-[#1A4688]! text-white");
-    $(this).addClass("bg-[#1A4688]! text-white");
-  });
-
+ 
+  
+  
+  
   
   
   
 });
-
-
-
-// YouTube popup
-$(document).on("click", ".popup-youtube", function (e) {
-  e.preventDefault();
-  const videoUrl = $(this).data("video");
-  let videoId = videoUrl.split("v=")[1];
-  if (videoId.includes("&")) {
-    videoId = videoId.split("&")[0];
-  }
-  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`;
-  $(".youtube_iframe").attr("src", embedUrl);
-  
-  
-  
-  $(".main_popup").toggleClass("scale-0");
-  $(".overlay_popup").toggleClass("hidden");
-});
-
-$(document).on("click", ".close_popup, .overlay_popup", function (e) {
-  $(".main_popup").addClass("scale-0");
-  $(".overlay_popup").addClass("hidden");
-});
-
