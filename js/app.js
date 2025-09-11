@@ -59,9 +59,6 @@ $(document).ready(function () {
     },
   });
 
-
-
-
   // back to top
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 200) {
@@ -139,12 +136,6 @@ $(document).ready(function () {
       }
     },
   }).init();
-
- 
-  
-  
-  
-  
-  
-  
 });
+
+

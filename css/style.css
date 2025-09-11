@@ -146,4 +146,49 @@ body {
     color: var(--primary-color);
 }
 
+/* product details slider css  */
+.product-gallery img {
+    border-radius: 8px;
+}
 
+.mySwiper2 .swiper-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.mySwiper .swiper-slide img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.mySwiper .swiper-slide {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .mySwiper2 .swiper-slide img {
+        height: 300px;
+    }
+
+    .mySwiper .swiper-slide img {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mySwiper2 .swiper-slide img {
+        height: 250px;
+    }
+
+    .mySwiper .swiper-slide img {
+        height: 80px;
+    }
+}
